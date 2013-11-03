@@ -1,0 +1,19 @@
+//Task 2. Which of the following values can be assigned to a variable of type float and which to a variable of 
+//type double: 34.567839023, 12.345, 8923.1234857, 3456.091?
+
+using System;
+class FloatAndDouble
+{
+    static void Main()
+    {
+        Console.Title = "FloatAndDouble";
+
+        float AfloatNum = 12.345F;
+        float BFloatNum = 3456.091F;
+        double AdoubleNum = 34.567839023D;// it`s not nececerry to write in the end a D letter!
+        double BDoubleNum = 8923.1234857D;// it`s not nececerry to write in the end a D letter!
+
+        Console.WriteLine("Values assigned to float are: {0} and {1}", AfloatNum, BFloatNum);
+        Console.WriteLine("Values assigned to double are: {0} and {1}", AdoubleNum, BDoubleNum);
+    }
+}
