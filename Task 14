@@ -1,0 +1,30 @@
+//Task 14. Declare the variables needed to keep the information for a single bank account,
+//using the appropriate data types and descriptive names.
+
+using System;
+class DeclareBankAcount
+{
+    static void Main()
+    {
+        Console.Title = "DeclareBankAcount";
+
+        dynamic firstName = "Someone";// dinamic becouse there are option to exchange the letters with digits
+        dynamic middleName = "Anyonev";
+        dynamic lastName = "Someonev";
+
+        decimal balance = 333333333333333333333.33M;//It`s better to use decimal foraccounting
+        string bank = "INTBrossBank Ltd";
+        dynamic iBan = "BG33SF33333333330000000";
+        string bic = "ABCDBG";
+
+        ulong cCard1 = 4444444444444;
+        ulong cCard2 = 5555555555555;
+        ulong cCard3 = 6666666666666;
+
+        Console.WriteLine("Bank: \n{0}", bank); 
+        Console.WriteLine((new string('-',+24))+"\nClient`s full name: \n{0} {1} {2}", firstName, middleName, lastName);
+        Console.WriteLine((new string('-',+24))+"\nBalance: \n{0} BGN", balance);
+        Console.WriteLine((new string('-',+28))+"\nAccount Information:\nIBAN:{0}\nBIC:{1}", iBan, bic);
+        Console.WriteLine((new string('-',+28))+"\nCredit Card(s) Number:\n{0}\n{1}\n{2}", cCard1, cCard2, cCard3+"\n\n\n");
+    }
+}
