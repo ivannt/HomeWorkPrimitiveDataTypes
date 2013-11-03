@@ -1,0 +1,25 @@
+//Task 9. Write a program that prints an isosceles triangle of 9 copyright symbols ©. 
+
+using System;
+using System.Text;
+class Triangles
+{
+    static void Main()
+    {  
+        
+        //the copyright symbol
+        Console.Title = "CopyRightTriangles";
+        Console.OutputEncoding = Encoding.UTF8;
+       
+        Console.Title = "CopyRightTriangles";
+
+        Console.WriteLine("Enter Number:");//Enter number 9
+        int numberOfSymbols = int.Parse(Console.ReadLine());
+        for (int i = 1; i < numberOfSymbols; i = i + 2)
+        {
+            Console.WriteLine(new string(' ', numberOfSymbols) + new string('\u00a9', i));
+            numberOfSymbols--;
+        }
+        Console.WriteLine();
+    }
+}
