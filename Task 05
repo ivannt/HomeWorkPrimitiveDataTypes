@@ -1,0 +1,16 @@
+//Task 5. Declare a character variable and assign it with the symbol that has Unicode code 72.
+//Hint: first use the Windows Calculator to find the hexadecimal representation of 72.
+
+using System;
+class UnicodeSimbols
+{
+    static void Main()
+    {
+        //hexadecimal representation of 72 is 48!!!
+        Console.Title = "UnicodeSimbols";
+
+        char SymbolNum = '\u0048';
+        Console.WriteLine("Code {0} is a representation of Hexadecimal number 48( 72) by Unicode", SymbolNum);
+        Console.WriteLine();
+    }
+}
