@@ -1,0 +1,35 @@
+//Task 6. Declare a boolean variable called isFemale and assign an appropriate value corresponding to your gender.
+
+using System;
+class BooleanVariable
+{
+    static void Main()
+    {
+        Console.Title = "BooleanVariables";
+
+        bool isFemale = false;
+        char gender;
+        Console.WriteLine("Which letter is used to designate woman\n\n\n\"M\" OR \"F\"?");
+        Console.WriteLine(new string('-', 30));
+        Console.WriteLine();
+        gender = (char)Console.Read();
+        if (gender == 'M')
+        {
+            Console.WriteLine("wrong guess, it is {0}.", isFemale);
+            Console.WriteLine();
+        }
+        else
+        {
+            if (gender == 'F')
+            {
+                Console.WriteLine("correctly guess, it is {0}.", !isFemale);
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("Do not chedt!!!");
+                Console.WriteLine();
+            }
+        }
+    }
+}
