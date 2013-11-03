@@ -1,0 +1,21 @@
+//Task 3. Write a program that safely compares floating-point numbers with precision of 0.000001. 
+//Examples:(5.3 ; 6.01) -> false;  (5.00000001 ; 5.00000003) -> true.
+
+
+using System;
+class FloatingPointPrecision
+{
+    static void Main()
+    {   // At first write "Example 1"and pres a continue key, then enter the second two digits.
+        Console.Title = "FloatingPointPrecision";
+
+        Console.WriteLine("Enter the first number: ");
+        decimal firstNum = decimal.Parse(Console.ReadLine());//It`s recomended to use a "decimal"!
+
+        Console.WriteLine("Enter the second number: ");
+        decimal secondNum = decimal.Parse(Console.ReadLine());//It`s recomended to use a "decimal"!
+
+        bool result = (Math.Abs(firstNum-secondNum) < 0.000001m);
+        Console.WriteLine(result);
+    }
+}
