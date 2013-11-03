@@ -1,0 +1,29 @@
+//Task 13. Create a program that assigns null values to an integer and to double variables.
+//Try to print them on the console, try to add some values or the null literal to them and see the result.
+
+using System;
+class DeclareNullValues
+{
+    static void Main()
+    {
+        Console.Title = "DeclareNullValues";
+
+        int? someInteger = null;
+        double? someDouble = null;
+
+        Console.WriteLine("This is an integer with null value -> {0}", someInteger);
+        Console.WriteLine("This is a double with null value   -> {0}", someDouble + "\n" + (new string('-', 39)));
+
+        someInteger = 33;
+        someDouble = 3.33;
+
+        Console.WriteLine("This is an integer with value 33 -> {0}", someInteger);
+        Console.WriteLine("This is a double with value 3.33 -> {0}", someDouble + "\n" + (new string('-', 39)));
+
+        int? sInteger = null;
+        double? sDouble = null;
+
+        Console.WriteLine(sInteger.GetValueOrDefault());
+        Console.WriteLine(sDouble.GetValueOrDefault() + "\n"+(new string('-', 39)));
+    }
+}
